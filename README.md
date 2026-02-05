@@ -35,50 +35,29 @@ Aplikacja umożliwia:
 
 ---
 
-## Zrzuty ekranu (wstaw swoje screeny)
-> Zrób screeny w emulatorze/telefonie i wrzuć je do folderu `docs/screens/` (utwórz go), a następnie podmień linki poniżej.
-
 ### 1) Ekran Dashboard – lista + statystyki + wykres
-**Co ma być widoczne:**
 - karta „Statystyki”
 - wykres hałasu z osiami
 - lista pomiarów
+  
+<img width="405" height="840" alt="sensor" src="https://github.com/user-attachments/assets/2e00cb6e-e114-4c6b-844a-fa1f56cdf33f" />
 
-**Wstaw tutaj:**
-![Dashboard](docs/screens/01_dashboard.png)
 
 ### 2) Ekran Szczegóły pomiaru
-**Co ma być widoczne:**
 - data/czas
 - GPS (lat/lon) i dokładność
 - ruch peak
 - hałas
 - przycisk „Usuń pomiar”
-
-**Wstaw tutaj:**
-![Details](docs/screens/02_details.png)
-
-### 3) Dialog potwierdzający usunięcie pomiaru
-**Co ma być widoczne:**
-- okno dialogowe „Usunąć pomiar?”
-
-**Wstaw tutaj:**
-![Delete dialog](docs/screens/03_delete_dialog.png)
-
-### 4) Ekran uprawnień (PermissionGate)
-**Co ma być widoczne:**
-- informacja o wymaganych uprawnieniach
-- przycisk „Nadaj uprawnienia”
-
-**Wstaw tutaj:**
-![Permissions](docs/screens/04_permissions.png)
+- 
+<img width="405" height="832" alt="sensor2" src="https://github.com/user-attachments/assets/e5a92e99-6fe6-4c47-a66c-bce820800f88" />
 
 ---
 
 ## Instrukcja uruchomienia
 
 ### Wymagania
-- Android Studio (zalecane: najnowsza wersja)
+- Android Studio
 - Android SDK
 - Telefon z Androidem lub emulator (AVD)
 - Minimalny SDK projektu: **minSdk 34**
@@ -87,33 +66,15 @@ Aplikacja umożliwia:
 1. Otwórz projekt w Android Studio (`File -> Open` i wybierz folder projektu).
 2. Poczekaj na `Gradle Sync`.
 3. Uruchom na emulatorze lub telefonie:
-   - emulator: wybierz urządzenie AVD i kliknij `Run (▶)`
-   - telefon: włącz „Debugowanie USB”, podłącz kabel, zaakceptuj debugowanie i kliknij `Run (▶)`
+   - emulator: wybierz urządzenie AVD i kliknij Run
+   - telefon: włącz „Debugowanie USB”, podłącz kabel, zaakceptuj debugowanie i kliknij Run
 4. Przy pierwszym uruchomieniu nadaj uprawnienia:
    - Lokalizacja (GPS) – „Zezwól podczas używania”
    - Mikrofon – „Zezwól”
 
 ### Testowanie sensorów na emulatorze
 - **Akcelerometr:** w `Extended controls -> Virtual sensors` użyj trybu **Move** (samo Rotate może dawać stałe ~9.81).
-- **GPS:** w `Extended controls -> Location` ustaw punkt lub trasę (route/GPX).  
-  Uwaga: w zależności od obrazu emulatora zachowanie GPS może się różnić.
-
----
-
-## Budowanie pliku APK do testów
-
-### APK debug (najszybsze – do testów)
-1. Android Studio → `Build` → `Build Bundle(s) / APK(s)` → `Build APK(s)`
-2. Po zakończeniu kliknij w komunikat „locate” lub znajdź plik tutaj:
-   - `app/build/outputs/apk/debug/app-debug.apk`
-
-### APK release (opcjonalnie)
-1. Android Studio → `Build` → `Generate Signed Bundle / APK`
-2. Wybierz `APK` → dalej → utwórz/wybierz keystore → `release`
-3. Plik pojawi się zwykle w:
-   - `app/build/outputs/apk/release/app-release.apk`
-
----
+- **GPS:** w `Extended controls -> Location` ustaw punkt lub trasę (route/GPX).
 
 ## Uprawnienia
 Aplikacja wymaga:
