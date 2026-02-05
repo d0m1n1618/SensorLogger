@@ -82,3 +82,5 @@ Aplikacja wymaga:
 - `android.permission.RECORD_AUDIO`
 
 Wszystkie są obsługiwane jako runtime permissions.
+
+Gotowy plik APK do testów znajduje się w zakładce Releases (SensorLogger v1.0).
