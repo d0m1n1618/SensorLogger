@@ -76,11 +76,11 @@ Aplikacja umożliwia:
 - **Akcelerometr:** w `Extended controls -> Virtual sensors` użyj trybu **Move** (samo Rotate może dawać stałe ~9.81).
 - **GPS:** w `Extended controls -> Location` ustaw punkt lub trasę (route/GPX).
 
+### Gotowy plik APK do testów znajduje się w zakładce Releases (SensorLogger v1.0).
+
 ## Uprawnienia
 Aplikacja wymaga:
 - `android.permission.ACCESS_FINE_LOCATION`
 - `android.permission.RECORD_AUDIO`
 
 Wszystkie są obsługiwane jako runtime permissions.
-
-Gotowy plik APK do testów znajduje się w zakładce Releases (SensorLogger v1.0).
