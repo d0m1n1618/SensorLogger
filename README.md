@@ -12,19 +12,19 @@ Aplikacja umożliwia:
 
 ---
 
-## Użyte sensory / źródła danych (min. 3)
+## Użyte sensory / źródła danych
 1. **GPS / Lokalizacja**  
    - pobieranie aktualnej pozycji (szer./dł. geograficzna) oraz dokładności (± metry)
 
 2. **Akcelerometr**  
-   - wyznaczanie „ruchu” jako peak przyspieszenia (w projekcie: peak/linear peak)
+   - wyznaczanie ruchu jako peak przyspieszenia (w projekcie: peak/linear peak)
 
 3. **Mikrofon**  
    - pomiar poziomu hałasu (wartość w skali 0–100 na podstawie RMS z AudioRecord)
 
 ---
 
-## Funkcjonalności a wymagania minimalne
+## Funkcjonalności
 - ✅ Akwizycja danych z min. 3 źródeł: GPS + akcelerometr + mikrofon
 - ✅ Reprezentacja danych: lista + statystyki (dashboard) + wykres
 - ✅ Min. 2 ekrany: Dashboard + Szczegóły (Navigation Compose)
