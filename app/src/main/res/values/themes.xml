@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.SensorLogger" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- opcjonalnie możesz dodać kolory -->
+    </style>
+</resources>
